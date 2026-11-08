@@ -1,0 +1,27 @@
+{
+  "name": "expo-expert",
+  "version": "1.0.0",
+  "description": "Expert Expo / React Native guidance for iOS apps: state, composition, layout, safe areas, performance, lists, navigation, animation, accessibility, charts, Liquid Glass, SDK version checks, profiling, and animated 3D icons.",
+  "author": {
+    "name": "Richardson Dackam"
+  },
+  "repository": "https://github.com/richardsondx/expo-agent-skill",
+  "license": "MIT",
+  "keywords": [
+    "expo",
+    "react-native",
+    "ios",
+    "typescript",
+    "state-management",
+    "performance",
+    "navigation",
+    "lists",
+    "animation",
+    "accessibility",
+    "liquid-glass"
+  ],
+  "skills": [
+    "./skills/expo-expert-skill",
+    "./skills/3dicon"
+  ]
+}

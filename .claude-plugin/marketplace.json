@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/anthropics/claude-code/refs/heads/main/marketplace/marketplace.schema.json",
+  "name": "expo-expert-skill",
+  "version": "1.0.0",
+  "owner": {
+    "name": "Richardson Dackam"
+  },
+  "metadata": {
+    "description": "Expo / React Native best practices for iOS: state, composition, performance, navigation, animation, accessibility, charts, and animated 3D icons."
+  },
+  "plugins": [
+    {
+      "name": "expo-expert",
+      "description": "Expert Expo guidance for state, composition, performance, navigation, animation, accessibility, charts, and Liquid Glass patterns.",
+      "repository": "https://github.com/richardsondx/expo-agent-skill",
+      "version": "1.0.0",
+      "author": {
+        "name": "Richardson Dackam"
+      },
+      "license": "MIT",
+      "category": "development",
+      "keywords": [
+        "expo",
+        "react-native",
+        "ios",
+        "typescript",
+        "state-management",
+        "performance",
+        "liquid-glass"
+      ],
+      "tags": [
+        "expo",
+        "react-native",
+        "ios",
+        "typescript",
+        "state-management",
+        "performance"
+      ],
+      "source": "./"
+    }
+  ]
+}

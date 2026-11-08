@@ -1,0 +1,37 @@
+MIT License
+
+Copyright (c) 2026 Richardson Dackam — Expo adaptation only
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## Attribution
+
+This repository is an Expo / React Native adaptation of two MIT-licensed
+works. It does not claim their authors wrote the Expo port.
+
+- SwiftUI Expert Skill — Copyright (c) 2026 Antoine van der Lee.
+  Source: https://github.com/AvdLee/SwiftUI-Agent-Skill
+  The state, composition, layout, performance, list, navigation, animation,
+  accessibility, chart, and Liquid Glass principles in
+  skills/expo-expert-skill/ are translated from that skill. No Swift code
+  from it is presented as Expo code.
+- 3dicon — Copyright (c) 2026 Sam Yost.
+  Source: https://github.com/samyost1/3dicon
+  Vendored unchanged in skills/3dicon/ (see its own SKILL.md). Its
+  Expo integration note is skills/3dicon/EXPO-USAGE.md.
