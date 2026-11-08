@@ -59,28 +59,6 @@ It also covers the Expo motion principles distilled from Emil
 Kowalski's work, in
 `skills/expo-expert-skill/references/emil-motion-principles.md`.
 
-## 3dicon — animated 3D icons in Expo
-
-`skills/3dicon/` is the full 3dicon skill, vendored with attribution.
-It turns one prompt into a looping animated 3D icon with real
-transparency, as an animated WebP. `expo-image` renders animated
-WebP natively. No Lottie. No new native dependency.
-
-- Still: about 13 cents. Full run: about 48 cents, about 4 minutes.
-- **Hard rule: show ONE still and get approval before animating.**
-  Then propose ONE motion and get approval before running it.
-- Put output in `assets/icons/`. Ship the still alongside the WebP
-  and swap to it when reduced motion is on.
-- File size scales with frame count: 122 frames at 24fps, 288px,
-  is 857 KB. Encode at the source frame rate. Never sample down
-  to 8fps to save size.
-- Never stack a code spring or drift on top of a baked loop.
-- The soft contact shadow does not survive matting. Check the icon
-  on light surfaces before shipping.
-
-Full Expo notes: `skills/3dicon/EXPO-USAGE.md` and
-`skills/expo-expert-skill/references/animated-icons-3dicon.md`.
-
 ## Skill structure
 
 ```text

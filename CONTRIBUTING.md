@@ -4,10 +4,8 @@ Thanks for helping make Expo guidance clearer and more correct.
 
 ## What this repo is
 
-An Expo / React Native adaptation of SwiftUI principles, plus a vendored
-3dicon skill. Keep the two parts separate: Expo guidance lives in
-`skills/expo-expert-skill/`, 3dicon lives in `skills/3dicon/` and should
-stay close to its upstream source.
+Expo / React Native guidance for iOS apps. Each skill lives in its
+own folder under `skills/` and keeps its own source and attribution.
 
 ## Rules
 
