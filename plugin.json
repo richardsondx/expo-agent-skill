@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "expo-expert",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Expert Expo / React Native guidance for iOS apps: state, composition, layout, safe areas, performance, lists, navigation, animation, accessibility, charts, Liquid Glass, SDK version checks, profiling, and animated 3D icons.",
   "author": {
     "name": "Richardson Dackam",
@@ -20,6 +20,9 @@
     "navigation",
     "lists",
     "animation",
+    "reanimated",
+    "gestures",
+    "motion",
     "accessibility",
     "liquid-glass",
     "3dicon"

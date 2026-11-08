@@ -26,6 +26,8 @@ not a polish step. Swift-only ideas did not port. See README.md.
 - Run `npx expo lint` and `npx tsc --noEmit` before declaring a task done.
 - Prefer Expo modules over third-party libraries. Check your available
   skills before adding a dependency.
+- Animation work starts in `skills/animate-expo/` — build, review,
+  and audit motion with Emil Kowalski's skills, not from a blank file.
 - Use Expo Router for all navigation. Routes live in `src/app/`.
   Keep non-route code outside `src/app/`.
 - `ios/` and `android/` are generated. Never create or edit them by
@@ -113,6 +115,14 @@ Consult the reference file for each topic relevant to the task:
 | Animations (basics) | `references/animation-basics.md` |
 | Animations (transitions) | `references/animation-transitions.md` |
 | Animations (advanced) | `references/animation-advanced.md` |
+| Animations in Expo (Reanimated, gestures) | `skills/animate-expo/SKILL.md` |
+| Motion principles, distilled for Expo | `references/emil-motion-principles.md` |
+| Review animations | `skills/review-animations/SKILL.md` |
+| Audit and improve animations | `skills/improve-animations/SKILL.md` |
+| Find / remove animation opportunities | `skills/find-animation-opportunities/SKILL.md`, `skills/remove-animations/SKILL.md` |
+| Animation vocabulary | `skills/animation-vocabulary/SKILL.md` |
+| Break UI with worst-case data | `skills/break-ui/SKILL.md` |
+| Prototype variants | `skills/prototype/SKILL.md` |
 | Accessibility | `references/accessibility-patterns.md` |
 | Charts (concepts) | `references/charts.md` |
 | Charts accessibility | `references/charts-accessibility.md` |

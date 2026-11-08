@@ -28,6 +28,12 @@ other installs.
 - **Lists** — stable keys, windowing, pagination
 - **Navigation** — Expo Router, sheets, deep links
 - **Animation** — springs, transitions, reduced motion
+- **Motion craft** — `animate-expo` (Reanimated, gestures, sheets,
+  haptics), motion review, motion audit and improvement plans
+- **Motion judgement** — finding places that earn motion, removing
+  motion that does not, naming motion precisely
+- **Breaking UI** — worst-case data: long names, empty lists, huge counts
+- **Prototyping** — several variants of one UI piece, with a switcher
 - **Accessibility** — VoiceOver, Dynamic Type at AX5, roles and labels
 - **Charts** — concepts only, with text equivalents
 - **Liquid Glass** — only when asked, with an opaque fallback
@@ -38,15 +44,20 @@ other installs.
   done, Expo Router, generated native folders, Ionicons only
 - **Animated 3D icons** — 3dicon, vendored with its own skill file
 
-## What we don't need
+## What we cover
 
-These are not in this skill:
-
-- macOS scenes, window styling, and macOS views
-- Swift Charts API specifics
-- Swift Document APIs
-- Instruments trace scripts
-- Styled text editing
+This repo covers Expo animation and motion craft: building motion
+that runs on the UI thread, with springs that carry velocity and
+gestures that track 1:1. It covers review and audit of motion, so
+existing animations can be checked against a strict bar and fixed
+in priority order. It covers finding places that would genuinely
+benefit from motion, and removing motion that does not earn its
+place. It covers naming motion precisely, so the right words
+produce the right feel. It covers breaking UI with worst-case data,
+and prototyping several variants of one piece before choosing.
+It also covers the Expo motion principles distilled from Emil
+Kowalski's work, in
+`skills/expo-expert-skill/references/emil-motion-principles.md`.
 
 ## 3dicon — animated 3D icons in Expo
 
@@ -85,10 +96,21 @@ skills/expo-expert-skill/
     image-optimization.md, toolbar-patterns.md, web-content.md,
     liquid-glass.md, text-patterns.md, localization.md,
     expo-sdk-versions.md, soft-deprecation.md, previews.md,
-    expo-profiling.md, expo-house-rules.md, animated-icons-3dicon.md
+    expo-profiling.md, expo-house-rules.md, animated-icons-3dicon.md,
+    emil-motion-principles.md
 skills/3dicon/
   SKILL.md, EXPO-USAGE.md, iconloop/, docs/limitations.md,
   examples/timer/, requirements.txt, .env.example
+skills/animate-expo/
+  SKILL.md, RECIPES.md
+skills/review-animations/
+  SKILL.md, STANDARDS.md
+skills/improve-animations/
+  SKILL.md, AUDIT.md, PLAN-TEMPLATE.md
+skills/find-animation-opportunities/, skills/remove-animations/,
+skills/animation-vocabulary/, skills/break-ui/,
+skills/prototype/
+  SKILL.md (plus CATALOG.md, PICKER.md where listed above)
 ```
 
 ## Credits and attribution
@@ -99,6 +121,15 @@ skills/3dicon/
 - [3dicon](https://github.com/samyost1/3dicon) by
   [Sam Yost](https://github.com/samyost1) — vendored in
   `skills/3dicon/`, MIT.
+- [Skills](https://github.com/emilkowalski/skills) by
+  [Emil Kowalski](https://github.com/emilkowalski) — `animate-expo`,
+  `review-animations`, `improve-animations`,
+  `find-animation-opportunities`, `remove-animations`,
+  `animation-vocabulary`, `break-ui`, and `prototype` vendored in
+  `skills/`, MIT. The Expo motion principles in
+  `skills/expo-expert-skill/references/emil-motion-principles.md`
+  are distilled from his `gestures`, `choreograph`, `apple-design`,
+  `emil-design-eng`, and `animate` skills.
 - Richardson's Expo house rules come from his Stride project:
   `npx expo install` only, lint and typecheck before done, Expo
   Router, generated native folders, Ionicons only, and links that
@@ -107,4 +138,5 @@ skills/3dicon/
 ## License
 
 MIT. See [LICENSE](LICENSE) for the Expo adaptation copyright and
-the attribution notices for Antoine van der Lee and Sam Yost.
+the attribution notices for Antoine van der Lee, Sam Yost, and
+Emil Kowalski.

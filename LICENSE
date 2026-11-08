@@ -22,7 +22,7 @@ SOFTWARE.
 
 ## Attribution
 
-This repository is an Expo / React Native adaptation of two MIT-licensed
+This repository is an Expo / React Native adaptation of three MIT-licensed
 works. It does not claim their authors wrote the Expo port.
 
 - SwiftUI Expert Skill — Copyright (c) 2026 Antoine van der Lee.
@@ -35,3 +35,14 @@ works. It does not claim their authors wrote the Expo port.
   Source: https://github.com/samyost1/3dicon
   Vendored unchanged in skills/3dicon/ (see its own SKILL.md). Its
   Expo integration note is skills/3dicon/EXPO-USAGE.md.
+- Skills — Copyright (c) 2026 Emil Kowalski.
+  Source: https://github.com/emilkowalski/skills
+  Vendored unchanged in skills/animate-expo/,
+  skills/review-animations/, skills/improve-animations/,
+  skills/find-animation-opportunities/, skills/remove-animations/,
+  skills/animation-vocabulary/, skills/break-ui/, and
+  skills/prototype/ (see each skill's own SKILL.md). The Expo
+  motion principles in
+  skills/expo-expert-skill/references/emil-motion-principles.md
+  are distilled from his gestures, choreograph, apple-design,
+  emil-design-eng, and animate skills.
