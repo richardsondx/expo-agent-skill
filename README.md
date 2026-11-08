@@ -5,16 +5,6 @@ Expert guidance for any AI coding tool that supports the
 React Native state, composition, performance, navigation, animation,
 accessibility, charts, and Liquid Glass, for iOS apps built with Expo.
 
-This is an Expo adaptation of the
-[SwiftUI Agent Skill](https://github.com/AvdLee/SwiftUI-Agent-Skill)
-by Antoine van der Lee. The principles that transfer were translated
-into React Native / TypeScript. The parts that do not transfer are
-listed honestly below — nothing was faked into an Expo equivalent.
-
-It also vendors [3dicon](https://github.com/samyost1/3dicon) by
-Sam Yost: looping animated 3D icons as animated WebP, which
-`expo-image` renders natively.
-
 ## How to use
 
 ```bash
@@ -43,35 +33,20 @@ other installs.
 - **Liquid Glass** — only when asked, with an opaque fallback
 - **SDK versions** — read `package.json`, check versioned Expo docs,
   never trust training data
+- **Profiling** — Hermes profiler, React DevTools, Sentry, Maestro
+- **House rules** — `npx expo install` only, lint and typecheck before
+  done, Expo Router, generated native folders, Ionicons only
 - **Animated 3D icons** — 3dicon, vendored with its own skill file
 
-## What transfers easily
+## What we don't need
 
-| SwiftUI idea | Expo form |
-|---|---|
-| Small views, only the data they read | Small components, only the props they read |
-| `@Observable` granularity | Context split by topic, memoised values |
-| Stable `ForEach` identity | Stable `keyExtractor`, never the index |
-| Lazy lists | `FlatList` windowing, `getItemLayout` where it helps |
-| Safe areas | `react-native-safe-area-context` |
-| Springs and transitions | `react-native-reanimated` springs |
-| VoiceOver traits and labels | `accessibilityLabel` / `accessibilityRole` |
-| Dynamic Type | Font scaling that survives AX5 |
-| Image downsampling | Sized images, `expo-image` |
-| Liquid Glass, only when asked | Same rule, opaque fallback, check versioned docs |
-| Previews with mock data | Expo Go, dev client, Storybook |
+These are not in this skill:
 
-## What does NOT transfer
-
-| SwiftUI-only thing | Status |
-|---|---|
-| macOS scenes, window styling, macOS views | Dropped. No Expo equivalent. |
-| Swift Charts API specifics | Dropped. Charts are concepts only here; Victory and react-native-gifted-charts are named as options, with no invented API. |
-| Swift Document APIs (`Document`, `DocumentReader`) | Dropped. No equivalent in this skill. |
-| Instruments `.trace` scripts (`xctrace`) | Dropped. Replaced by `references/expo-profiling.md`: Hermes profiler, React DevTools, Sentry, Maestro — concepts only, no invented flags. |
-| `@State` / `@Binding` / `@Environment` syntax | Translated to hooks and Context, not copied. |
-| `NavigationSplitView`, `ToolbarOverflowMenu`, `ArrangementView` | Translated to Expo Router and header patterns, not copied. |
-| Styled text editing (`AttributedString`) | Dropped. No reference file; use a text input and check versioned docs. |
+- macOS scenes, window styling, and macOS views
+- Swift Charts API specifics
+- Swift Document APIs
+- Instruments trace scripts
+- Styled text editing
 
 ## 3dicon — animated 3D icons in Expo
 
@@ -116,7 +91,7 @@ skills/3dicon/
   examples/timer/, requirements.txt, .env.example
 ```
 
-## Acknowledgements
+## Credits and attribution
 
 - [SwiftUI Agent Skill](https://github.com/AvdLee/SwiftUI-Agent-Skill)
   by [Antoine van der Lee](https://www.avanderlee.com) — the source
@@ -124,10 +99,10 @@ skills/3dicon/
 - [3dicon](https://github.com/samyost1/3dicon) by
   [Sam Yost](https://github.com/samyost1) — vendored in
   `skills/3dicon/`, MIT.
-- Richardson's Expo house rules come from his Stride project
-  (`~/workspace/stride/AGENTS.md`): `npx expo install` only, lint
-  and typecheck before done, Expo Router, generated native folders,
-  Ionicons only, and links that never fail silently.
+- Richardson's Expo house rules come from his Stride project:
+  `npx expo install` only, lint and typecheck before done, Expo
+  Router, generated native folders, Ionicons only, and links that
+  never fail silently.
 
 ## License
 
